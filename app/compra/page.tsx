@@ -1,5 +1,6 @@
 import { BackgroundGradientAnimation } from "@/app/gradient";
 import { SparklesCore } from "@/app/sparkles";
+import { BackgroundBeamsDemo } from "./form";
 
 export default function Compra(){
     return(
@@ -13,7 +14,7 @@ export default function Compra(){
       fourthColor="rgb(252, 211, 77)"
       interactive= {true}
       >
-        <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
         background="transparent"
         minSize={0.4}
@@ -23,7 +24,7 @@ export default function Compra(){
         particleColor="#eab308"
         />
       </div>
-      <p>ss</p>
+      <BackgroundBeamsDemo/>
       
       
 

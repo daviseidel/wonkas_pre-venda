@@ -1,6 +1,7 @@
 import { BackgroundGradientAnimation } from "@/app/gradient";
 import { SparklesCore } from "@/app/sparkles";
 import { BackgroundBeamsDemo } from "./form";
+import { Doces } from "./doces";
 
 export default function Compra(){
     return(
@@ -25,8 +26,10 @@ export default function Compra(){
         />
       </div>
       <BackgroundBeamsDemo/>
-      
-      
+      <div>
+        
+      </div>
+      <Doces/>
 
       </BackgroundGradientAnimation>
         </>

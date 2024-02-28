@@ -39,7 +39,7 @@ export default function Compra(){
         <div className="align-bottom justify-items-center content-center">
           <Doces/>
         </div>
-        <div className="justify-center self-center content-center">
+        <div className="justify-center self-center content-center z-50">
           <Pix/>
         </div>
         

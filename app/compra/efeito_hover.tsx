@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import Counter from "./counter";
 
 export const HoverEffect = ({
   items,
@@ -100,13 +101,16 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
-        className
-      )}
-    >
-      {children}
-    </p>
+    <>
+      <p
+        className={cn(
+          "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+          className
+        )}
+      >
+        {children}
+      </p>
+      <Counter />
+    </>
   );
 };

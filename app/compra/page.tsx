@@ -4,6 +4,8 @@ import { BackgroundBeamsDemo } from "./form";
 import { Doces } from "./doces";
 import Pix from "./pix";
 import Counter from "./counter";
+import { gerarPix } from "../gerarPix";
+
 
 
 export default function Compra(){

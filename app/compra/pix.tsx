@@ -2,6 +2,11 @@ import { gerarPix } from "../gerarPix";
 import { Meteors } from "./meteoros";
 import Image  from "next/image"
 
+function runPix(){
+  gerarPix(5)
+  alert("Código pix copiado, pague com o aplicativo do seu banco.")
+}
+
 export default function Pix(){
     return (
         <div className="">
@@ -29,10 +34,7 @@ export default function Pix(){
                 Pague via Pix
               </h1> 
 
-            <button onClick={() => {
-              gerarPix(5);
-              alert("Código pix copiado, pague com o aplicativo do seu banco.")
-            }} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            <button onClick={runPix} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
             Gerar Pix
            </button>
             

@@ -1,3 +1,4 @@
+"use client"
 import { BackgroundGradientAnimation } from "@/app/gradient";
 import { SparklesCore } from "@/app/sparkles";
 import { BackgroundBeamsDemo } from "./form";

@@ -5,6 +5,7 @@ import { Doces } from "./doces";
 import Pix from "./pix";
 import Counter from "./counter";
 
+
 export default function Compra(){
     return(
         <>

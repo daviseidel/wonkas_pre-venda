@@ -12,7 +12,7 @@ export default function Name(){
       secondColor="202, 138, 4"
       thirdColor="rgb(251, 146, 60)"
       fourthColor="rgb(252, 211, 77)"
-      interactive= {true}
+      interactive= {false}
       >
        <div className="w-full absolute inset-0 h-screen">
         <SparklesCore

@@ -1,4 +1,6 @@
-import { HoverEffect } from "./efeito_hover";
+import { useContext } from "react";
+import { HoverEffect } from "./card";
+
 
 export function Doces() {
     return (

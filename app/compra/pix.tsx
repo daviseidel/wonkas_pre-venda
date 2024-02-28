@@ -1,3 +1,4 @@
+import { gerarPix } from "../gerarPix";
 import { Meteors } from "./meteoros";
 import Image  from "next/image"
 
@@ -26,10 +27,14 @@ export default function Pix(){
      
               <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                 Pague via Pix
-              </h1>
-            <div className="border px-4 py-1 rounded-lg ">
-                <Image src="/qrcode-pix.png" alt="pix" width={500} height={500}></Image>
-            </div>
+              </h1> 
+
+            <button onClick={() => {
+              gerarPix(5);
+              alert("Código pix copiado, pague com o aplicativo do seu banco.")
+            }} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            Gerar Pix
+           </button>
             
              
      
@@ -40,3 +45,4 @@ export default function Pix(){
         </div>
       );
 }
+

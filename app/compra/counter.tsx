@@ -4,16 +4,16 @@ import { CounterContext } from './counterContext';
 export default function Counter(){
     const [doces, setDoces] = useState(0);
 
-    const {updateTotal} = useContext(CounterContext);
+    const {total, updateTotal} = useContext(CounterContext);
 
-    const increment = () => {
+      const increment = () => {
         setDoces(doces + 1);
-        updateTotal(1);
+        updateTotal(total + 1);
       };
 
       const decrement = () => {
         setDoces(doces - 1);
-        updateTotal(-1);
+        updateTotal(total - 1);
       };
 
     return(

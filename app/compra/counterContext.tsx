@@ -13,11 +13,11 @@ interface CounterProviderProps {
 }
 
 export const CounterProvider = ({ children }: CounterProviderProps) => {
-  const [total, setTotal] = useState(0);
+  const [total, updateTotal] = useState(0);
 
-  const updateTotal = (value: number) => {
-    setTotal(prevTotal => prevTotal + value);
-  };
+  //const updateTotal = (value: number) => {
+  //  setTotal(prevTotal => prevTotal + value);
+  //};
 
   return (
     <CounterContext.Provider value={{ total, updateTotal }}>

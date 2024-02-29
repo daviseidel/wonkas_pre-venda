@@ -2,12 +2,11 @@ import { useContext } from "react";
 import { gerarPix } from "../gerarPix";
 import { CounterContext, CounterProvider } from "./counterContext";
 import { Meteors } from "./meteoros";
-import Image  from "next/image"
 
 
 export default function Pix(){
     const { total } = useContext(CounterContext);
-
+    
     return (
 
         <div className="">

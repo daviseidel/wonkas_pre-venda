@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { HoverEffect } from "./card";
-import { CounterProvider } from "./counterContext";
 
 
 export function Doces() {

@@ -7,6 +7,7 @@ import Pix from "./pix";
 import Counter from "./counter";
 import { gerarPix } from "../gerarPix";
 import { CounterProvider } from "./counterContext";
+export const dynamic = 'force-dynamic'
 
 
 

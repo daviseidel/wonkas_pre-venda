@@ -5,11 +5,11 @@ import { CounterProvider } from "./counterContext";
 
 export function Doces() {
     return (
-      <CounterProvider>
+      
         <div className="max-w-5xl mx-auto px-8">
           <HoverEffect items={projects} />
         </div>
-      </CounterProvider>
+      
     );
   }
 

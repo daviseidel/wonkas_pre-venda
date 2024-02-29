@@ -9,7 +9,7 @@ export default function Pix(){
     const { total } = useContext(CounterContext);
 
     return (
-      <CounterProvider>
+
         <div className="">
           <div className=" w-full relative max-w-xs">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
@@ -34,14 +34,14 @@ export default function Pix(){
               <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                 Pague via Pix
               </h1> 
-
-              <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-              Preço Total: R$ {total * 4},00
-              </p>
-
+              <CounterProvider>
+                <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+                Preço Total: R$ {total * 4},00
+                </p>
+              </CounterProvider>
             <button onClick={()=> gerarPix(total)} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
             Gerar Pix
-           </button>
+           </button> 
             
              
      
@@ -50,7 +50,7 @@ export default function Pix(){
             </div>
           </div>
         </div>
-        </CounterProvider>
+        
       );
 }
 

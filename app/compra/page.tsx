@@ -38,14 +38,14 @@ export default function Compra(){
         <div className="align-top justify-center self-center content-center">
           <BackgroundBeamsDemo/>
         </div>
-        <CounterProvider>
-        <div className="align-bottom justify-items-center content-center">
-          <Doces/>
-        </div>
-        <div className="justify-center self-center content-center z-50">
-          <Pix/>
-        </div>
-        </CounterProvider>
+        
+          <div className="align-bottom justify-items-center content-center">
+            <Doces/>
+          </div>
+          <div className="justify-center self-center content-center z-50">
+            <Pix/>
+          </div>
+        
       
       </div>
       

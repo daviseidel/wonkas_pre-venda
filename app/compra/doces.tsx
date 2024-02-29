@@ -1,12 +1,15 @@
 import { useContext } from "react";
 import { HoverEffect } from "./card";
+import { CounterProvider } from "./counterContext";
 
 
 export function Doces() {
     return (
-      <div className="max-w-5xl mx-auto px-8">
-        <HoverEffect items={projects} />
-      </div>
+      <CounterProvider>
+        <div className="max-w-5xl mx-auto px-8">
+          <HoverEffect items={projects} />
+        </div>
+      </CounterProvider>
     );
   }
 

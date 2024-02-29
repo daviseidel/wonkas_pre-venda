@@ -1,10 +1,10 @@
 import { createStaticPix, hasError } from 'pix-utils';
-export function gerarPix(valor: number){
+export function gerarPix(valor: number, nome?: string){
     const pix = createStaticPix({
     merchantName: "Wonka's Boutique",
     merchantCity: 'Brasília',
     pixKey: '09278809110',
-    infoAdicional: 'Wonka PreVenda',
+    infoAdicional: 'Wonka-PreVenda'+nome,
     transactionAmount: (valor * 4),
     });
 

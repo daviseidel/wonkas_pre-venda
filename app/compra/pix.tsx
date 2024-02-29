@@ -35,8 +35,12 @@ export default function Pix(){
                 Pague via Pix
               </h1> 
 
+              <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+              Preço Total: R$ {total * 4},00
+              </p>
+
             <button onClick={()=> gerarPix(total)} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-            Gerar Pix Preço: {total}
+            Gerar Pix
            </button>
             
              

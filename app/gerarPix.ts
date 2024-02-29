@@ -5,13 +5,13 @@ export function gerarPix(valor: number){
     merchantCity: 'Brasília',
     pixKey: '09278809110',
     infoAdicional: 'Wonka PreVenda',
-    transactionAmount: valor,
+    transactionAmount: (valor * 4),
     });
 
     if (!hasError(pix)) {
     const brCode = pix.toBRCode();
     navigator.clipboard.writeText(brCode);
-    alert("Código pix copiado, pague com o aplicativo do seu banco. Valor:" + valor)
+    alert("Código pix copiado, pague com o aplicativo do seu banco.")
     }
 
     

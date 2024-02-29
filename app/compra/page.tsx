@@ -6,12 +6,14 @@ import { Doces } from "./doces";
 import Pix from "./pix";
 import Counter from "./counter";
 import { gerarPix } from "../gerarPix";
+import { CounterProvider } from "./counterContext";
 
 
 
 export default function Compra(){
     return(
         <>
+        <CounterProvider>
         <BackgroundGradientAnimation
       gradientBackgroundStart="rgb(217, 119, 6)"
       gradientBackgroundEnd="rgb(234, 179, 8)"
@@ -48,8 +50,9 @@ export default function Compra(){
       
 
       
-
+  
       </BackgroundGradientAnimation>
+      </CounterProvider>
         </>
     );
 }

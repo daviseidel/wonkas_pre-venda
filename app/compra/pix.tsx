@@ -1,14 +1,15 @@
+import { useContext } from "react";
 import { gerarPix } from "../gerarPix";
+import { CounterContext, CounterProvider } from "./counterContext";
 import { Meteors } from "./meteoros";
 import Image  from "next/image"
 
-function runPix(){
-  gerarPix(5)
-  alert("Código pix copiado, pague com o aplicativo do seu banco.")
-}
 
 export default function Pix(){
+    const { total } = useContext(CounterContext);
+
     return (
+      <CounterProvider>
         <div className="">
           <div className=" w-full relative max-w-xs">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
@@ -34,8 +35,8 @@ export default function Pix(){
                 Pague via Pix
               </h1> 
 
-            <button onClick={runPix} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-            Gerar Pix
+            <button onClick={()=> gerarPix(total)} className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+            Gerar Pix Preço: {total}
            </button>
             
              
@@ -45,6 +46,7 @@ export default function Pix(){
             </div>
           </div>
         </div>
+        </CounterProvider>
       );
 }
 

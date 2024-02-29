@@ -48,7 +48,7 @@ export default function Name(){
 
           {/* Radial Gradient to prevent sharp edges */}
           <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-          <div className="absolute w-full h-full flex content-center justify-center mt-10">
+          <div className="absolute w-full h-full flex content-center justify-center mt-10 z-50">
             <Button_Buy/>
           </div>
           

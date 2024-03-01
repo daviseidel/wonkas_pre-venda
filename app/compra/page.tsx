@@ -2,11 +2,6 @@
 import { BackgroundGradientAnimation } from "@/app/gradient";
 import { SparklesCore } from "@/app/sparkles";
 import { BackgroundBeamsDemo } from "./form";
-import { Doces } from "./doces";
-import Pix from "./pix";
-import Counter from "./counter";
-import { gerarPix } from "../gerarPix";
-import { CounterProvider } from "./counterContext";
 import Preco from "./preco";
 export const dynamic = 'force-dynamic'
 
@@ -31,23 +26,19 @@ export default function Compra(){
         background="transparent"
         minSize={0.4}
         maxSize={2}
-        particleDensity={120}
+        particleDensity={80}
         className="w-full h-full"
         particleColor="#eab308"
         />
       </div>
       <div className="flex flex-col h-full w-full">
+
         <div className="align-top justify-center self-center content-center">
           <BackgroundBeamsDemo/>
         </div>
         
-        <Preco/>
-      
-      </div>
-      
-
-      
-  
+        <Preco/> 
+      </div> 
       </BackgroundGradientAnimation>
       
         </>

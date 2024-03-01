@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
@@ -19,6 +20,7 @@
     "pix-utils": "^2.5.0",
     "react": "^18",
     "react-dom": "^18",
+    "redux": "^5.0.1",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {

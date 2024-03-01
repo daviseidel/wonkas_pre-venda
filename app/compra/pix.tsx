@@ -42,7 +42,7 @@ export default function Pix(){
             Gerar Pix
            </button> 
               {/* Meaty part - Meteor effect */}
-              <Meteors number={20} />
+              {/* <Meteors number={20} />*/}
             </div>
           </div>
         </div>
